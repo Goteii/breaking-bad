@@ -7,12 +7,12 @@
 
 @font-face {
   font-family: PopLight;
-  src: url("./fonts//Poppins-Light.ttf");
+  src: url("./fonts/Poppins-Light.ttf");
 }
 
 @font-face {
   font-family: PopRegular;
-  src: url("./fonts//Poppins-Regular.ttf");
+  src: url("./fonts/Poppins-Regular.ttf");
 }
 
 body {
@@ -51,6 +51,11 @@ nav .logo .logo-text {
       -ms-grid-row-align: center;
       align-self: center;
   padding: 0 20px;
+}
+
+nav .logo .logo-text a {
+  text-decoration: none;
+  color: white;
 }
 
 nav .menu {
@@ -228,13 +233,12 @@ nav .menu {
 
 .pages svg {
   cursor: pointer;
-  opacity: 1;
   -webkit-transform: scale(1.75);
           transform: scale(1.75);
 }
 
 .pages svg .active {
-  opacity: 0.5;
+  opacity: 0.25;
 }
 
 .pages svg:hover {
@@ -280,5 +284,164 @@ nav .menu {
   100% {
     opacity: 0.5;
   }
+}
+
+.container-story {
+  background: -webkit-gradient(linear, left top, left bottom, from(#120909), to(#ca3232));
+  background: linear-gradient(#120909, #ca3232);
+}
+
+.container-story img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.character-selection {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 5rem;
+}
+
+.character-selection ul {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  font-family: PopRegular;
+  color: white;
+  font-size: 20px;
+}
+
+.character-selection ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.character-selection ul .active {
+  opacity: 1;
+}
+
+.story {
+  width: 80%;
+  margin: auto;
+  margin-top: 5em;
+}
+
+.story p {
+  font-size: 18px;
+  text-indent: 2.5%;
+  color: white;
+  text-shadow: 5px 5px 10px black;
+}
+
+.ipsType_right {
+  text-align: right;
+}
+
+.ipsType_center {
+  text-align: center;
+}
+
+.cInnerContent {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ipsSpacer_bottom_double {
+  padding-bottom: 30px;
+}
+
+.ipsGrid {
+  display: inline-block;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ipsGrid::before, .ipsGrid::after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.ipsGrid > [class*="ipsGrid_span"] {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.ipsGrid > .ipsGrid_span5 {
+  width: 40.42553191489362%;
+}
+
+.ipsGrid > .ipsGrid_span7 {
+  width: 57.44680851063829%;
+}
+
+.ipsGrid > [class*="ipsGrid_span"] {
+  float: left;
+  margin-left: 2%;
+}
+
+.ipsGrid > [class*="ipsGrid_span"]:first-child {
+  margin-left: 0;
+}
+
+.feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.featured-image-container .card {
+  padding: 10px;
+  height: 0;
+  padding-bottom: calc(100% - 10px);
+}
+
+h2.heading_large {
+  font-size: 1.8em;
+}
+
+.header-section {
+  margin: 200px auto;
+}
+
+.gs_reveal {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: -webkit-transform 0s;
+  transition: -webkit-transform 0s;
+  transition: transform 0s;
+  transition: transform 0s, -webkit-transform 0s;
 }
 /*# sourceMappingURL=styles.css.map */
